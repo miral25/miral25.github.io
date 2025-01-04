@@ -10,7 +10,7 @@ font-family: 'Poppins', sans-serif;
 5.  Experience
 6.  Education
 7.  Portfolio
-8. Contact
+
 
 /*-------------------------------------
 		1.General css (Reset code)
@@ -219,11 +219,10 @@ nav.navbar.bootsnav .navbar-toggle i{
     align-items: center;
     justify-content: center;
     position: relative;
-    background: url(../images/about/img_bg_1.jpg) no-repeat;
-    background-size: 60% auto; /* 60% width, auto height */
-    background-position: center; /* Center the background */
-    height: 920px;
-    margin-left:-30px;
+    background: url(../images/about/img_bg_1.jpg) no-repeat;    
+    background-size:cover;
+    background-position: center;
+    height: 920px;    
 }
 
 .welcome-hero:before {
@@ -232,7 +231,7 @@ nav.navbar.bootsnav .navbar-toggle i{
     top: 0;
     left: 0;
     background: rgba(31, 44, 108, 0.65);
-    width: 60%; /* Match the background width */
+    width: 100%; /* Match the background width */
     height: 100%;
     left: 50%; /* Shift it to the center */
     transform: translateX(-50%); /* Align the pseudo-element to the center */
