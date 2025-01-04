@@ -36,7 +36,7 @@ $(document).ready(function(){
 	
 	// 2. Smooth Scroll spy
 		
-		$('.header-area').sticky({
+		/*$('.header-area').sticky({
            topSpacing:0
         });
 		
@@ -53,7 +53,29 @@ $(document).ready(function(){
 		$('body').scrollspy({
 			target:'.navbar-collapse',
 			offset:0
+		});*/
+
+		$('.header-area').sticky({
+			topSpacing: 0
 		});
+		
+		// Smooth Scroll with adjusted offset
+		$('li.smooth-menu a').bind("click", function(event) {
+			event.preventDefault();
+			var anchor = $(this);
+			var navbarHeight = $('.navbar').outerHeight(); // Get the height of the navbar dynamically
+			$('html, body').stop().animate({
+				scrollTop: $(anchor.attr('href')).offset().top - navbarHeight // Subtract navbar height
+			}, 1200, 'easeInOutExpo');
+		});
+		
+		$('body').scrollspy({
+			target: '.navbar-collapse',
+			offset: 0
+		});
+		
+
+
 
 	// 3. Progress-bar
 	
