@@ -1,0 +1,329 @@
+/* ===== General Reset & Typography ===== */
+html {
+  scroll-padding-top: 60px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #43485c;
+  background: #fff;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+h2 {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.text-purple {
+  color: #b70707 !important;
+}
+
+.section-heading {
+  margin-bottom: 40px;
+}
+
+.full-width-divider {
+  margin: 0;
+  border: none;
+  height: 1px;
+  background-color: #b4acac;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+}
+
+
+/* ===== Navbar ===== */
+.navbar-brand {
+  color: #b70707 !important;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.nav-link {
+  text-transform: uppercase;
+  margin-left: 15px;
+  color: #555 !important;
+  font-weight: 500;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #b70707 !important;
+}
+
+/* ===== About Section ===== */
+
+.about-img {
+  width: 60%;
+  height: 75%;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  margin-left: -134px;
+}
+
+#about p {
+    text-align: justify;
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 40px;
+    line-height: 2;
+    margin-left: 100px;
+}
+
+.social-buttons {
+  background-color: #b70707;
+  width: 60.1%;
+  margin-left: 60px;
+}
+
+.btn-hover-white {
+  color: #fff;
+  border-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.btn-hover-white:hover {
+  background-color: #fff;
+  color: #b70707; /* Red text when hovered */
+  border-color: #fff;
+}
+
+
+
+/* ===== Experience Section ===== */
+.timeline {
+  position: relative;
+}
+
+.timeline-vertical-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  background-color: #b4acac;
+  z-index: 0;
+}
+
+.timeline-item {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.timeline-dot {
+  width: 12px;
+  height: 12px;
+  background-color: #e63946;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.timeline-content h5 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.timeline-content h6 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #6c757d;
+}
+
+.timeline-content p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+
+/* ===== Education Timeline ===== */
+#education {
+    margin-bottom: 70px;
+}
+
+#education-heading{
+    margin-top: 40px;
+    padding-bottom: 40px;
+}
+
+.timeline-edu {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.edu-dot-container {
+  position: relative;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.edu-line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #ccc;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+
+.edu-dot {
+  width: 12px;
+  height: 12px;
+  background-color: #e63946;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+
+
+/* ===== Projects Section ===== */
+.project-card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+    height: 260px; /* or whatever you need */
+  overflow: hidden; /* hides overflow if content exceeds height */
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-img {
+  width: 400px;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project-img:hover {
+  transform: scale(1.02);
+}
+
+.project-card h4 {
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+
+.project-card a {
+  text-decoration: none; /* removes underline by default */
+  color: inherit;        /* keeps h4 color consistent with rest of text */
+}
+
+.project-card a:hover h4 {
+  color: #b70707; /* or any hover color you like */
+  text-decoration: none; /* ensure no underline on hover */
+  transition: color 0.3s ease;
+}
+
+
+
+#projects p {
+  font-size: 0.95rem;
+  color: #444;
+
+}
+
+#projects .row {
+  align-items: flex-start; /* aligns tops of image and text */
+}
+
+
+
+/* ===== Scroll-to-Top Button ===== */
+.scroll-top {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  display: none;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 20px;
+  background: #b70707;
+  color: #fff;
+  border-radius: 50%;
+  z-index: 9999;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.scroll-top:hover {
+  background: #fff;
+  color: #b70707;
+  border: 1px solid #b70707;
+}
+
+
+/* ===== Footer ===== */
+.footer-copyright {
+  background: #f9fbfd;
+  color: #b70707;
+  font-size: 14px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.footer-copyright a {
+  color: #b70707;
+  text-decoration: none;
+}
+
+.footer-copyright a:hover {
+  text-decoration: underline;
+}
+
+.contact-info .single-contact-add-info {
+  margin-bottom: 20px;
+}
+
+.contact-info h3 {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #333;
+}
+
+.contact-info i {
+  font-size: 16px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+.contact-icon {
+  color: #b70707;
+  padding: 4px;
+  transition: all 0.3s ease;
+}
+
+.contact-icon:hover {
+  background-color: #b70707;
+  color: #fff;
+}
+
+footer a {
+  color: #b70707;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
