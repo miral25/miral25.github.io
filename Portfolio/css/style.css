@@ -327,3 +327,80 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+  .about-img {
+    width: 80%;
+    height: auto;
+    margin: 0 auto 20px;
+    display: block;
+  }
+
+  #about p {
+    margin-left: 0;
+    text-align: left;
+    font-size: 15px;
+  }
+
+  .social-buttons {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .timeline-vertical-line {
+    left: 20px;
+  }
+
+  .timeline-item {
+    margin-left: 20px;
+  }
+
+  .timeline-item .col-md-5 {
+    text-align: left !important;
+  }
+
+  .timeline-dot {
+    margin-left: -20px;
+  }
+
+  .project-card {
+    height: auto;
+    min-height: 260px;
+  }
+
+  .section-heading {
+    margin-bottom: 30px;
+  }
+
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  .nav-link {
+    margin-left: 0;
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-img {
+    width: 100%;
+  }
+
+  .social-buttons {
+    width: 100%;
+  }
+
+  .timeline-item {
+    margin-left: 10px;
+  }
+
+  .timeline-dot {
+    margin-left: -10px;
+  }
+
+  .section-heading h2 {
+    font-size: 1.8rem;
+  }
+}
