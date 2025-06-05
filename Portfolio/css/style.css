@@ -236,7 +236,7 @@ h2 {
 #projects p {
   font-size: 0.95rem;
   color: #444;
-
+  text-align: justify;
 }
 
 #projects .row {
@@ -333,13 +333,13 @@ footer a:hover {
   .about-img {
     width: 80%;
     height: auto;
-    margin: 0 auto 20px;
+    margin: 0 auto;
     display: block;
   }
 
   #about p {
     margin-left: 0;
-    text-align: left;
+    text-align: justify;
     font-size: 15px;
   }
 
@@ -348,25 +348,41 @@ footer a:hover {
     margin: 0 auto;
   }
 
+  #education {
+    margin-top: -60px;
+  }
+
   .timeline-vertical-line {
-    left: 20px;
+    display: none;
   }
 
   .timeline-item {
-    margin-left: 20px;
+    margin: 0 auto;
   }
 
   .timeline-item .col-md-5 {
-    text-align: left !important;
+    text-align: justify !important;
   }
 
   .timeline-dot {
-    margin-left: -20px;
+    display: none;
+  }
+
+  #education {
+    margin-bottom: 30px;
   }
 
   .project-card {
     height: auto;
     min-height: 260px;
+  }
+
+  .project-card h4 {
+  margin-top: 20px;
+  }
+
+  .project-card p {
+  text-align: justify;
   }
 
   .section-heading {
@@ -381,6 +397,7 @@ footer a:hover {
     margin-left: 0;
     padding: 10px 0;
   }
+
 }
 
 @media (max-width: 576px) {
